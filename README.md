@@ -78,4 +78,3 @@ Finally, we apply the **Kelly Criterion** to allocate capital across BTC, VNI, a
 - To run the analysis code and the dashboard locally, ensure you have Python installed along with the necessary libraries. You can install the required packages using pip:
 ```bash
 pip install pandas numpy matplotlib seaborn plotly pmdarima 
----

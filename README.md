@@ -20,7 +20,7 @@ The repository is organized into two main sections
 
 The project’s core objective is to evaluate how these assets behave, how predictable they are, and how forecasting models can be leveraged to make informed investment decisions and construct optimized portfolios. The workflow integrates financial theory, time series analysis, and machine learning in a multi-step process:
 
-### 1. Data Collection and Preprocessing
+### 1. Data Preprocessing
 We gather historical daily price data for BTC, VNI, and XAU from 2015 to 2025. After aligning their time series, we clean and standardize the dataset by fixing date formats, removing inconsistencies, handling missing values, duplicate rows. This step builds a solid foundation for all downstream analytics and modeling.
 
 ### 2. Exploratory Data Analysis (EDA)
@@ -38,11 +38,11 @@ To capture nonlinear relationships and improve directional forecasting, we train
 
 Key steps included:
 
-- Evaluating model performance using **Accuracy**, **Precision**, **Recall**, **F1-Score**, and **AUC** to ensure a well-rounded assessment of predictive quality.
-- Analyzing **average feature importance** to understand which variables most influenced model decisions.
-- Comparing prediction results across the three asset classes (**BTC**, **VNI**, and **XAU**) to assess relative forecastability and model robustness.
-- Building and testing an **Ensemble model**, combining the two best-performing individual models to enhance prediction stability and generalization.
-- Using the trained ensemble to **calculate class probabilities** for each observation, which were later used in portfolio optimization with the Kelly Criterion.
+- Evaluate the models using Accuracy, Precision, Recall, F1-score, and AUC.
+- Check the average feature importance of the models.
+- Compare results across different assets.
+- Build and evaluate an Ensemble model from the two best individual models.
+- Use the trained ensemble model to calculate class probabilities.
 
 ### 6. Macroeconomic Factors Integration
 We expand our analysis beyond price data by incorporating external influences:

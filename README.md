@@ -57,7 +57,7 @@ These variables are tested for their impact on volatility and return direction, 
 All findings are synthesized into a comparative framework. We evaluate each asset’s predictability, sensitivity to external factors, and volatility. These insights are positioned from an investor’s perspective to highlight the strengths, risks, and use cases for each asset in a diversified portfolio.
 
 ### 8. Portfolio Construction using the Kelly Criterion
-Finally, we apply the **Kelly Criterion** to allocate capital across BTC, VNI, and XAU based on the probability of positive returns estimated from our classifiers. The performance of the Kelly-optimized portfolio is compared against equal-weight and volatility-adjusted benchmarks using backtesting.
+In this section, we will utilize the **Kelly criterion** to construct a portfolio based on three assets: Bitcoin (BTC), Gold (XAU), and the VN-Index (VNI). This portfolio construction will employ two commonly used trading strategies in financial markets: Momentum and Mean Reversion. The performance of the Kelly-optimized portfolio then is compared against equal-weight portfolio using backtesting
 
 ---
 

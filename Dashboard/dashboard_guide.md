@@ -11,42 +11,23 @@ Before running the dashboard, please ensure you have the following library insta
 **🔴 IMPORTANT:** Please remember to change the data file path in both files before running the code file
 There are two primary ways to run the dashboard:
 
-### Option 1: Using a Jupyter Notebook (.ipynb file)
+### Using a Jupyter Notebook (.ipynb file)
 
 Just download the file dashboard.ipynb and run
 * **Limitation:** Running a Dash application directly within a standard Jupyter Notebook output cell might **not display the dashboard at its full size** or render the layout perfectly as intended. It's suitable for quick checks but not the ideal viewing experience.
 
-### Option 2: Using the Python Script via Terminal (recommend)
+### Option 2: Using the Python file (.py file)
 
-This method runs the dashboard as a standalone web application, ensuring correct display and full functionality.
+Just running the .py file, and after that you will see a link to local web sever. Look for output in the terminal similar to this:
+![image](https://github.com/user-attachments/assets/9fafcc47-c4fd-4ed9-84c4-b2c973b921f7)
+* Copy this full URL (e.g., http://127.0.0.1:8050/).
 
-1.  **Open Command Prompt (CMD) or Terminal:**
-    * Launch your system's terminal application
-
-2.  **Navigate to the Dashboard Directory:**
-    * Use the `cd` command to move into the folder containing the dashboard script (`dashboard.py`).
-    * Example (replace with the actual path on your computer):
-        ```bash
-        cd D:\Study\3. CODE\1. Python_code_file\Big_Data\group_assignment\Dashboard
-        ```
-3.  **Run the Python Script:**
-    * Execute the dashboard script by typing the following command and pressing Enter:
-        ```bash
-        python dashboard.py
-        ```
-4.  **Access the Dashboard URL:**
-    * After the script runs successfully, it will start a local web server. Look for output in the terminal similar to this:
-    ![image](https://github.com/user-attachments/assets/15c4d68c-6ed7-4a0a-8f64-79419c597253)
-    * Copy this full URL (e.g., `http://127.0.0.1:8050/`).
-
-5.  **View in Browser:**
-    * Open your preferred web browser then paste the copied URL into the browser's address bar and press Enter.
-
-6.  **Stop the Server:**
-    * When you are finished, go back to the Command Prompt/Terminal window where the script is running.
-    * Press `Ctrl + C` to shut down the local web server.
----
-This method (Option 2) is recommended for the best user experience with the interactive features and layout of the Dash application. 
+After that open your preferred web browser then paste the copied URL into the browser's address bar and press Enter.
 
 ### The interface of the dashboard
+![image](https://github.com/user-attachments/assets/da0cf356-88d7-4216-97c9-2724e30c7b61)
+![image](https://github.com/user-attachments/assets/d047526f-3981-42f7-a4d2-53ac25847dec)
+![image](https://github.com/user-attachments/assets/f672d929-9a86-4e3b-8844-b0bd524f1280)
+
+
 

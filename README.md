@@ -3,16 +3,19 @@
 ## Project Structure
 The repository is organized into two main sections
 1.  **`Data`**: Contains all data-related files.
-    * `Raw Data`: The original, unprocessed data files used in the project.
-    * `Cleaned Data`: Includes 3 final cleaned datasets: BTC_cleaned.csv, XAU_cleaned.csv, VNI_cleaned.csv
-    * `Data with feature engineering`: includes additional indicators such as EMA, RSI, Bollinger Bands,...
+    * `assets_price_history_data_raw_2015_2025.xlsx`: The original, unprocessed data files used in the project.
+    * `Cleaned_data`: Includes 3 final cleaned datasets: BTC_cleaned.csv, XAU_cleaned.csv, VNI_cleaned.csv
+    * `USD_VND_exchange_rate.csv`: the exchange rate between USD and VND (2015-2025)
+    * `Signal`: includes additional indicators such as EMA, RSI, Bollinger Bands,... generated from "Feature engineering" process
+    * `Longterm`: is the same as "Signal" file but at longer term (e.g. instead of EMA 20, "Longterm" file have EMA 100)
+
 2.  **`Group_work`**: Jupyter Notebook file for the detailed analysis. This section is divided into 8 parts, each focusing on a different analytical perspective.
   
 ---
 
 ## Project Summary
 
-**Cross-Asset Financial Analysis and Forecasting** is a comprehensive data science project that applies modern statistical and machine learning (ML) techniques to analyze and forecast the return behavior of three major asset classes:
+**Cross-Asset Financial Analysis and Forecasting** is a data science project that applies ARIMA and modern statistical and machine learning (ML) techniques to analyze and forecast the return behavior of three major asset classes:
 
 - **Bitcoin (BTC)** – representing the cryptocurrency market  
 - **Vietnam stock market Index (VNI)** – representing the Vietnamese equity market  
@@ -30,7 +33,7 @@ We explore each asset’s statistical properties through summary metrics (mean, 
 We create predictive features from raw price data, including technical indicators (EMA, RSI, Bollinger Bands), lagged returns, and rolling statistics. These features are designed to improve the signal quality for forecasting return direction, while avoiding lookahead bias or data leakage.
 
 ### 4. Time Series Forecasting (Statistical Models)
-We apply classical time series models like **ARIMA** to model and forecast asset returns. Walk-forward validation is used to ensure robust performance testing. These models serve as a statistical baseline and offer interpretable insights into trend and seasonality patterns across assets.
+We apply classical time series models like **ARIMA** to model and forecast asset returns. Walk-forward validation is used to ensure robust performance testing. These models serve as a statistical baseline to find possible trend and seasonality patterns across assets.
 
 ### 5. Trend Prediction with Machine Learning
 
